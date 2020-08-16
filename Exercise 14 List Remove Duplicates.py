@@ -1,7 +1,6 @@
 import random
-def removeDuplicateUsingSet(list):
-    uniqueSet = (set(list))
-    print(list(uniqueSet))
+def removeDuplicateUsingSet(inputList):
+    return (list(set(inputList)))
 
 def removeDuplicateUsingLoop(list):
     removeDuplicatesList  = []
@@ -12,6 +11,5 @@ def removeDuplicateUsingLoop(list):
 
 
 a = [0, 12, 11, 17, 10, 2, 16, 6, 8, 11, 17]
-removeDuplicateUsingSet(a)
-# print(removeDuplicateUsingSet(a))
+print(removeDuplicateUsingSet(a))
 print(removeDuplicateUsingLoop(a))
